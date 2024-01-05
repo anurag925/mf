@@ -1,11 +1,17 @@
 package models
 
-import "github.com/uptrace/bun"
+import (
+	"time"
+
+	"github.com/uptrace/bun"
+)
 
 type MfApiRelation struct {
-	bun.BaseModel `bun:"table:mfi_api_relations,alias:mar"`
+	bun.BaseModel `bun:"table:mf_api_relations,alias:mar"`
 
-	ID         int64 `bun:",pk,autoincrement"`
+	ID         int64     `bun:",pk,autoincrement"`
+	CreatedAt  time.Time `bun:",nullzero,notnull,default:current_timestamp"`
+	UpdatedAt  time.Time `bun:",nullzero,notnull,default:current_timestamp"`
 	RelationID int64
 	SchemeID   int64
 
