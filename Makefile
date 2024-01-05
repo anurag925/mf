@@ -1,7 +1,8 @@
+include .env
 SERVER_TARGET='build/mf_server'
 
 MIGRATION_TARGET=db/migrations
-DATABASE_URL="mysql://root:@tcp(localhost:3306)/mf_development"
+DATABASE_URL=${DB_URL}
 MIGRATOR=migrate -verbose -path ${MIGRATION_TARGET} -database ${DATABASE_URL}
 
 all:
@@ -11,6 +12,11 @@ build:
 	go build cmd/server/main.go
 run:
 	./main
+script:
+	go run cmd/script/main.go
+
+
+
 gen_migration:
 	migrate -verbose create -ext sql -tz utc -dir ${MIGRATION_TARGET} ${name} 
 migrate_up:
