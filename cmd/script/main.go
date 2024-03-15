@@ -3,10 +3,9 @@ package main
 import (
 	"log/slog"
 
-	"github.com/anurag925/mf/app/scripts"
-	"github.com/anurag925/mf/cmd"
-	"github.com/anurag925/mf/config"
-	"github.com/anurag925/mf/core"
+	"github.com/anurag925/identity/cmd"
+	"github.com/anurag925/identity/config"
+	"github.com/anurag925/identity/core"
 )
 
 func main() {
@@ -15,5 +14,4 @@ func main() {
 	slog.Info("Application is starting on", slog.Any("environment", config.Env(config.Environment(*flags.Env))), slog.Int("port", *flags.Port))
 	core.Script()
 
-	scripts.PullDataFromMfAPI()
 }

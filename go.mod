@@ -1,4 +1,4 @@
-module github.com/anurag925/mf
+module github.com/anurag925/identity
 
 go 1.21.5
 

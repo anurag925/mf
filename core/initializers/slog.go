@@ -6,8 +6,8 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/anurag925/mf/config"
-	"github.com/anurag925/mf/core/logger"
+	"github.com/anurag925/identity/config"
+	"github.com/anurag925/identity/core/logger"
 )
 
 func InitLogger() *slog.Logger {

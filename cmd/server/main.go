@@ -9,9 +9,9 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/anurag925/mf/cmd"
-	"github.com/anurag925/mf/config"
-	"github.com/anurag925/mf/core"
+	"github.com/anurag925/identity/cmd"
+	"github.com/anurag925/identity/config"
+	"github.com/anurag925/identity/core"
 )
 
 func main() {

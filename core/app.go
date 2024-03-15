@@ -4,8 +4,8 @@ import (
 	"log/slog"
 	"sync"
 
-	"github.com/anurag925/mf/config"
-	"github.com/anurag925/mf/core/initializers"
+	"github.com/anurag925/identity/config"
+	"github.com/anurag925/identity/core/initializers"
 	"github.com/labstack/echo/v4"
 	"github.com/uptrace/bun"
 )
