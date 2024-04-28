@@ -3,14 +3,14 @@ module github.com/anurag925/identity
 go 1.21.5
 
 require (
-	github.com/a-h/templ v0.2.598
 	github.com/labstack/gommon v0.4.2
 	github.com/uptrace/bun v1.1.16
 )
 
 require (
+	github.com/go-resty/resty/v2 v2.11.0 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
-	github.com/kr/text v0.2.0 // indirect
+	github.com/google/uuid v1.5.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/samber/lo v1.38.1 // indirect
