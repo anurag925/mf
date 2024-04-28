@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/anurag925/identity/config"
-	"github.com/anurag925/identity/core/logger"
+	"github.com/anurag925/mf/config"
+	"github.com/anurag925/mf/core/logger"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
